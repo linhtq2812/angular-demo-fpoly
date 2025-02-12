@@ -1,0 +1,36 @@
+<button type="button" class="btn btn-primary" routerLink="/courses/create">
+  Create
+</button>
+<table class="table mt-2">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Duration</th>
+      <th>Instructor</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for( course of courses; track course.id) {
+
+    <tr>
+      <td scope="row">{{ course.id }}</td>
+      <td>{{ course.name }}</td>
+      <td>{{ course.description }}</td>
+      <td>{{ course.dururation }}</td>
+      <td>{{ course.instructor }}</td>
+      <td>
+        <a
+          href=""
+          [routerLink]="[course.id, 'detail']"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+          >Xem</a
+        >
+      </td>
+    </tr>
+    }
+  </tbody>
+</table>

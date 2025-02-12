@@ -1,0 +1,25 @@
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Class</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of students; track item.id) {
+
+      <tr class="">
+        <td scope="row">{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.age }}</td>
+        <td>{{ item.class }}</td>
+        <td>{{ item.email }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,53 @@
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      name="name"
+      id="name"
+      aria-describedby="helpId"
+      [(ngModel)]="courseForm.name"
+      placeholder=""
+    />
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input
+      type="text"
+      class="form-control"
+      name="description"
+      id="description"
+      aria-describedby="helpId"
+      [(ngModel)]="courseForm.description"
+      placeholder=""
+    />
+  </div>
+  <div class="form-group">
+    <label for="duration">Duration</label>
+    <input
+      type="number"
+      class="form-control"
+      name="duration"
+      id="duration"
+      aria-describedby="helpId"
+      [(ngModel)]="courseForm.duration"
+      placeholder=""
+    />
+  </div>
+  <div class="form-group">
+    <label for="instructor">Instructor</label>
+    <input
+      type="text"
+      class="form-control"
+      name="instructor"
+      id="instructor"
+      aria-describedby="helpId"
+      [(ngModel)]="courseForm.instructor"
+      placeholder=""
+    />
+  </div>
+  <button type="button" class="btn btn-primary" (click)="onSubmit()">
+    Submit
+  </button>
+</form>
